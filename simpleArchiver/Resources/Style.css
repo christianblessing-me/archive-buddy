@@ -70,6 +70,11 @@ ol {
     text-align: left;
 }
 
+a {
+    color: #0b57d0;
+    font-weight: 600;
+}
+
 ol {
     margin: 0;
     padding-left: 22px;
@@ -83,5 +88,9 @@ li + li {
     :root {
         --card-background: #1d2430;
         --muted-text: #b6bfcc;
+    }
+
+    a {
+        color: #8ab4f8;
     }
 }
