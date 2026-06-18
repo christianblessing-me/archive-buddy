@@ -6,6 +6,16 @@
     <script type="module" src="popup.js"></script>
 </head>
 <body>
-    <strong>Hello World!</strong>
+    <main class="popup">
+        <p class="eyebrow">Archive Buddy</p>
+        <h1 id="page-title">Checking archive.is...</h1>
+        <p id="page-url" class="meta"></p>
+        <p id="empty-state-banner" class="empty-state-banner" hidden>No archived version found for this page.</p>
+        <section id="primary-action" class="primary-action" hidden>
+            <button id="open-newest-button" class="primary-button" type="button">Open Newest Archive</button>
+        </section>
+        <div id="versions" class="versions"></div>
+        <p id="status" class="status"></p>
+    </main>
 </body>
 </html>

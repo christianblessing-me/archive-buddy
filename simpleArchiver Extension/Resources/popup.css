@@ -3,13 +3,138 @@
 }
 
 body {
-    width: 100px;
-    padding: 10px;
-
+    width: 360px;
+    margin: 0;
+    padding: 16px;
     font-family: system-ui;
-    text-align: center;
+    background: canvas;
+    color: canvastext;
+}
+
+.popup {
+    display: grid;
+    gap: 12px;
+}
+
+.eyebrow {
+    margin: 0;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    opacity: 0.7;
+}
+
+h1 {
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.25;
+}
+
+.meta {
+    margin: 0;
+    font-size: 12px;
+    line-height: 1.4;
+    word-break: break-word;
+    opacity: 0.8;
+}
+
+.empty-state-banner {
+    margin: 0;
+    border-radius: 12px;
+    padding: 12px 14px;
+    font-size: 13px;
+    font-weight: 600;
+    background: #fdebea;
+    color: canvastext;
+}
+
+.primary-action {
+    display: grid;
+}
+
+.primary-button,
+.versions {
+    font: inherit;
+}
+
+.primary-button {
+    width: 100%;
+    border: 0;
+    border-radius: 12px;
+    padding: 14px 16px;
+    font-weight: 700;
+    text-align: left;
+    color: white;
+    background: #0b57d0;
+}
+
+.versions {
+    display: grid;
+    gap: 12px;
+    margin: 0;
+    padding: 0;
+}
+
+.version-group {
+    display: grid;
+    gap: 8px;
+}
+
+.group-label {
+    margin: 0;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    opacity: 0.65;
+}
+
+.version-list {
+    display: grid;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.version-button {
+    width: 100%;
+    border: 0;
+    border-radius: 10px;
+    padding: 12px 14px;
+    text-align: left;
+    color: white;
+    background: #0b57d0;
+}
+
+.version-label {
+    display: block;
+    font-weight: 600;
+}
+
+.version-button small {
+    display: block;
+    margin-top: 4px;
+    font-size: 11px;
+    opacity: 0.8;
+    word-break: break-word;
+}
+
+.status {
+    margin: 0;
+    min-height: 1.4em;
+    font-size: 13px;
 }
 
 @media (prefers-color-scheme: dark) {
-    /* Dark Mode styles go here. */
+    .empty-state-banner {
+        background: #3b1f1d;
+    }
+
+    .primary-button,
+    .version-button {
+        background: #8ab4f8;
+        color: #0b0b0b;
+    }
 }

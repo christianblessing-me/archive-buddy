@@ -19,15 +19,19 @@
         "type": "module"
     },
 
-    "content_scripts": [{
-        "js": [ "content.js" ],
-        "matches": [ "*://example.com/*" ]
-    }],
-
     "action": {
         "default_popup": "popup.html",
-        "default_icon": "images/toolbar-icon.svg"
+        "default_icon": "images/icon-48.png"
     },
 
-    "permissions": [ ]
+    "permissions": [ "tabs" ],
+    "host_permissions": [
+        "https://archive.is/*",
+        "https://archive.today/*",
+        "https://archive.ph/*",
+        "https://archive.vn/*",
+        "https://archive.fo/*",
+        "https://archive.li/*",
+        "https://archive.md/*"
+    ]
 }
